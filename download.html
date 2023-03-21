@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="icon" type="image/png" href="http://umich.edu/skins/um2013/media/images/touch-icon-iphone.png">
+  <link rel="stylesheet" href="./style/style.css">
+  
+ 
+ 
+</head>
+
+<!-- Top  -->
+<body>
+<div class="top">
+  <table>
+    <tbody><tr>
+      <td class="top-left">
+        <img src="./style/michigan-logo.png" style="height:50px;width:auto">
+        <span class="top-title-text"> YouCook2 Dataset</span>
+      </td>
+      <td class="top-right">
+       <a href="./index.html" style="color:#FFCB05">Home</a>
+       <a href="./explore.html" style="color:#FFCB05">Explore</a>
+       <a href="./download.html" style="color:#FFCB05">Download</a>
+       <a href="./leaderboard.html" style="color:#FFCB05">Leaderboard</a>
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+<div class="contents">
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%" valign="middle">
+    <h2>Download</h2>
+        <div class="pc">
+          Please read the <a href="http://youcook2.eecs.umich.edu/static/YouCookII/youcookii_readme.pdf" target="_blank">README</a> file before download.<br>
+          Annotations (single .json file): <a href="http://youcook2.eecs.umich.edu/static/YouCookII/youcookii_annotations_trainval.tar.gz" target="_blank">Train+Val</a>, <a href="http://youcook2.eecs.umich.edu/static/YouCookII/youcookii_annotations_test_segments_only.tar.gz" target="_blank">Test</a> (segments only)<br>
+
+          Recipe ID/type: <a href="http://youcook2.eecs.umich.edu/static/YouCookII/label_foodtype.csv" target="_blank">ID-type pairs</a><br>
+          Splits: <a href="http://youcook2.eecs.umich.edu/static/YouCookII/splits.tar.gz" target="_blank">Train+Val+Test</a><br>
+          Scripts: <a href="http://youcook2.eecs.umich.edu/static/YouCookII/scripts.tar.gz" target="_blank">Download Scripts</a><br>
+          Frame-wise ResNet feature (.csv, 23.9GB): <a href="http://youcook2.eecs.umich.edu/static/YouCookII/feat_csv.tar.gz" target="_blank">Train+Val+Test</a><br>
+          Frame-wise ResNet feature (.dat, 11.2GB): <a href="http://youcook2.eecs.umich.edu/static/YouCookII/feat_dat.tar.gz" target="_blank">Train+Val+Test</a><br>
+          All-in-one (35.1GB): <a href="http://youcook2.eecs.umich.edu/static/YouCookII/YouCookII.tar.gz" target="_blank">YouCook2</a>
+        </div>
+    <h2>Download (YouCook2-BB)</h2>
+        <div class="pc">
+            [05/07/2019] Reformatted the annotation JSON files. Augmented the initial release with 3.5% more annotations. See the bottom of the code <a href="https://github.com/MichiganCOG/Video-Grounding-from-Text" target="_blank">repo</a> for more details.<br>
+            Please read the README file inside the annotation pack.<br>
+            Annotations (1.3MB): <a href="http://youcook2.eecs.umich.edu/static/dat/yc2_bb/yc2_bb.tar.gz" target="_blank">YouCook2-BB</a><br>
+            Region proposals and features see the code <a href="https://github.com/MichiganCOG/Video-Grounding-from-Text" target="_blank">repo</a>.
+        </div>
+    <h2>Download (others)</h2>
+        <div class="pc">
+            We provide both deep appearance (RGB) and motion (optic flow) feature extracted from <a href="https://github.com/LuoweiZhou/anet2016-cuhk-feature" target="_blank">TSN</a> at our DenseCap <a href="https://github.com/LuoweiZhou/densecap" target="_blank">repo</a>. See our CVPR 2018 <a href="http://openaccess.thecvf.com/content_cvpr_2018/CameraReady/0037.pdf" target="_blank">paper</a> for more details.
+        </div>
+        
+
+  </td></tr></tbody></table>
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="0"><tbody><tr><td width="100%" valign="middle">
+    <h2>License</h2>
+        <div class="pc">
+            [09/09/2019] We only provide the annotations and do not distribute the videos. The licenses for our annotations are as follows: <a href="http://youcook2.eecs.umich.edu/static/YouCookII/LICENSE_YOUCOOK2.txt" target="_blank">YouCook2</a>, <a href="http://youcook2.eecs.umich.edu/static/YouCookII/LICENSE_YOUCOOK2_BB.txt" target="_blank">YouCook2-BB</a> <br>
+        </div>
+    <h2>Citation</h2>
+        <div class="pc">
+            We introduced YouCook2 dataset in our AAAI 2018 paper on <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17344" target="_blank">video procedure segmentation</a>. Please cite the following if you find the dataset useful:
+            <pre style="line-height:calc(14px + 0.8vw);font-size:calc(8px + 0.6vw);background-color:#E8E8EE">  @inproceedings{ZhXuCoAAAI18,
+    author={Zhou, Luowei and Xu, Chenliang and Corso, Jason J},
+    title = {Towards Automatic Learning of Procedures From Web Instructional Videos},
+    booktitle = {AAAI Conference on Artificial Intelligence},
+    pages={7590--7598},
+    year = {2018},
+    url = {https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/17344}
+  }
+           </pre>
+          <br>
+          The bounding box annotation comes from our BMVC 2018 paper on <a href="http://bmvc2018.org/contents/papers/0070.pdf" target="_blank">weakly-supervised video object grounding</a>. Please cite the following if you find the annotation useful:
+
+            <pre style="line-height:calc(14px + 0.8vw);font-size:calc(8px + 0.6vw);background-color:#E8E8EE">  @inproceedings{ZhLoCoBMVC18,
+    author={Zhou, Luowei and Louis, Nathan and Corso, Jason J},
+    title={Weakly-Supervised Video Object Grounding from Text by Loss Weighting and Object Interaction},
+    booktitle = {British Machine Vision Conference},
+    year = {2018},
+    url = {http://bmvc2018.org/contents/papers/0070.pdf}
+  }
+           </pre>
+        </div>
+  </td></tr></tbody></table>
+</div>
+
+</body></html>

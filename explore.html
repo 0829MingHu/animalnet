@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://youcook2.eecs.umich.edu/explore -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <link rel="icon" type="image/png" href="http://umich.edu/skins/um2013/media/images/touch-icon-iphone.png">
+ <link rel="stylesheet" href="./style/style.css">
+<script src="./style.js"></script>
+ 
+
+ <style type="text/css">
+  a:link,a:visited {
+   color: #0000A0;
+   background-color: transparent;
+   text-decoration: none;
+  }
+  a:hover {
+   color: red;
+  }
+
+ </style>
+</head>
+
+<body>
+ <!-- Text link tag - by www.rapidtables.com -->
+ <a href="#">link</a>
+
+ <!-- Top  -->
+ <div class="top">
+   <table>
+     <tbody><tr>
+       <td class="top-left">
+         <img src="./style/michigan-logo.png" style="height:50px;width:auto">
+         <span class="top-title-text"> YouCook2 Dataset</span>
+       </td>
+       <td class="top-right">
+        <a href="./index.html" style="color:#FFCB05">Home</a>
+        <a href="./explore.html" style="color:#FFCB05">Explore</a>
+        <a href="./download.html" style="color:#FFCB05">Download</a>
+        <a href="./leaderboard.html" style="color:#FFCB05">Leaderboard</a>
+       </td>
+     </tr>
+   </tbody></table>
+ </div>
+ 
+ <div class="contents">
+   <table>
+     <tbody><tr>
+       <td valign="top"> 
+         <form method="post" enctype="multipart/form-data">
+         <h2> Search </h2><br>
+         <input type="text" id="box" /><input type="button" value="查询" onclick="search()" />
+        
+         <br><br>
+         <h2> Recipe Type </h2>
+         <div id="entities" class="control" style="height:600px">
+             
+               
+                 <br> <a href="#">authentic japanese ramen
+               
+             
+               
+                 <br> </a><a href="#">bangers and mash
+               
+             
+               
+                 <br> </a><a href="#">bean burrito
+               
+             
+               
+                 <br> </a><a href="#">beef bourguignon
+               
+             
+               
+                 <br> </a><a href="#">beef tacos
+               
+             
+               
+                 <br> </a><a href="#">bibimbap
+               
+             
+               
+                 <br> </a><a href="#">BLT
+               
+             
+               
+                 <br> </a><a href="#">boxty
+               
+             
+               
+                 <br> </a><a href="#">bratwurst
+               
+             
+               
+                 <br> </a><a href="#">buffalo wings
+               
+             
+               
+                 <br> </a><a href="#">bulgogi
+               
+             
+               
+                 <br> </a><a href="#">burger
+               
+             
+               
+                 <br> </a><a href="#">caesar salad
+               
+             
+               
+                 <br> </a><a href="#">calamari
+               
+             
+               
+                 <br> </a><a href="#">california roll
+               
+             
+               
+                 <br> </a><a href="#">chana masala
+               
+             
+               
+                 <br> </a><a href="#">chapati
+               
+             
+               
+                 <br> </a><a href="#">chicken parmesan
+               
+             
+               
+                 <br> </a><a href="#">chinese spring rolls
+               
+             
+               
+                 <br> </a><a href="#">clam chowder
+               
+             
+               
+                 <br> </a><a href="#">colcannon
+               
+             
+               
+                 <br> </a><a href="#">corn dogs
+               
+             
+               
+                 <br> </a><a href="#">cottage pie
+               
+             
+               
+                 <br> </a><a href="#">croque monsieur
+               
+             
+               
+                 <br> </a><a href="#">currywurst
+               
+             
+               
+                 <br> </a><a href="#">dal makhani
+               
+             
+               
+                 <br> </a><a href="#">eggs benedict
+               
+             
+               
+                 <br> </a><a href="#">enchilada
+               
+             
+               
+                 <br> </a><a href="#">escargot
+               
+             
+               
+                 <br> </a><a href="#">falafel
+               
+             
+               
+                 <br> </a><a href="#">fattoush
+               
+             
+               
+                 <br> </a><a href="#">fish and chips
+               
+             
+               
+                 <br> </a><a href="#">foie gras
+               
+             
+               
+                 <br> </a><a href="#">fried chicken
+               
+             
+               
+                 <br> </a><a href="#">fried eggs
+               
+             
+               
+                 <br> </a><a href="#">galbi
+               
+             
+               
+                 <br> </a><a href="#">general's chicken
+               
+             
+               
+                 <br> </a><a href="#">goulash
+               
+             
+               
+                 <br> </a><a href="#">grilled cheese
+               
+             
+               
+                 <br> </a><a href="#">hash browns
+               
+             
+               
+                 <br> </a><a href="#">hot dogs
+               
+             
+               
+                 <br> </a><a href="#">hummus
+               
+             
+               
+                 <br> </a><a href="#">indian chicken curry
+               
+             
+               
+                 <br> </a><a href="#">indian lamb curry
+               
+             
+               
+                 <br> </a><a href="#">kimchi
+               
+             
+               
+                 <br> </a><a href="#">kung pao chicken
+               
+             
+               
+                 <br> </a><a href="#">macaroni and cheese
+               
+             
+               
+                 <br> </a><a href="#">mapo tofu
+               
+             
+               
+                 <br> </a><a href="#">masala dosa
+               
+             
+               
+                 <br> </a><a href="#">mashed potato
+               
+             
+               
+                 <br> </a><a href="#">meatloaf
+               
+             
+               
+                 <br> </a><a href="#">minestrone
+               
+             
+               
+                 <br> </a><a href="#">miso soup
+               
+             
+               
+                 <br> </a><a href="#">mussels
+               
+             
+               
+                 <br> </a><a href="#">naan
+               
+             
+               
+                 <br> </a><a href="#">onion rings
+               
+             
+               
+                 <br> </a><a href="#">pad thai
+               
+             
+               
+                 <br> </a><a href="#">pancake
+               
+             
+               
+                 <br> </a><a href="#">pasta e fagioli
+               
+             
+               
+                 <br> </a><a href="#">pasta salad
+               
+             
+               
+                 <br> </a><a href="#">penne alla vodka
+               
+             
+               
+                 <br> </a><a href="#">pepperoni pizza
+               
+             
+               
+                 <br> </a><a href="#">pierogi
+               
+             
+               
+                 <br> </a><a href="#">pizza marghetta
+               
+             
+               
+                 <br> </a><a href="#">pork fried rice
+               
+             
+               
+                 <br> </a><a href="#">pork lo mein
+               
+             
+               
+                 <br> </a><a href="#">porkolt hungarian stew
+               
+             
+               
+                 <br> </a><a href="#">potstickers
+               
+             
+               
+                 <br> </a><a href="#">roti jala
+               
+             
+               
+                 <br> </a><a href="#">salmon nigiri
+               
+             
+               
+                 <br> </a><a href="#">salmon sashimi
+               
+             
+               
+                 <br> </a><a href="#">samosa
+               
+             
+               
+                 <br> </a><a href="#">sauerkraut
+               
+             
+               
+                 <br> </a><a href="#">scrambled eggs
+               
+             
+               
+                 <br> </a><a href="#">shepherd's pie
+               
+             
+               
+                 <br> </a><a href="#">shish kabob
+               
+             
+               
+                 <br> </a><a href="#">shrimp tempura
+               
+             
+               
+                 <br> </a><a href="#">shumai
+               
+             
+               
+                 <br> </a><a href="#">sichuan boiled fish
+               
+             
+               
+                 <br> </a><a href="#">singapore curry laksa
+               
+             
+               
+                 <br> </a><a href="#">singapore rice noodle
+               
+             
+               
+                 <br> </a><a href="#">sour soup
+               
+             
+               
+                 <br> </a><a href="#">spaghetti and meatballs
+               
+             
+               
+                 <br> </a><a href="#">spaghetti carbonara
+               
+             
+               
+                 <br> </a><a href="#">spicy tuna roll
+               
+             
+               
+                 <br> </a><a href="#">spider roll
+               
+             
+               
+                 <br> </a><a href="#">tabbouleh
+               
+             
+               
+                 <br> </a><a href="#">thai fried rice
+               
+             
+               
+                 <br> </a><a href="#">thai green curry chicken
+               
+             
+               
+                 <br> </a><a href="#">tomato soup
+               
+             
+               
+                 <br> </a><a href="#">tuna nigiri
+               
+             
+               
+                 <br> </a><a href="#">tuna sashimi
+               
+             
+               
+                 <br> </a><a href="#">udon noodle soup
+               
+             
+               
+                 <br> </a><a href="#">vegetable biryani
+               
+             
+               
+                 <br> </a><a href="#">vietnam sandwich
+               
+             
+               
+                 <br> </a><a href="#">vietnam spring roll
+               
+             
+               
+                 <br> </a><a href="#">waldorf salad
+               
+             
+               
+                 <br> </a><a href="#">wanton noodle
+               
+             
+               
+                 <br> </a><a href="#">wiener schnitzel
+               
+             
+               
+                 <br> </a><a href="#">yaki udon noodle
+               
+             
+         
+       </a></div></form></td>
+
+       <td>
+         <div id="outerthumbs" class="control">
+             </div></td><td>
+             
+              <table>
+				  <tr>
+					 
+					  <td><a href="sp.mp4"><video width="180px" height="100%" controls>
+    <source src="sp.mp4" type="video/mp4">
+</video>
+</a></td>
+					  <td><a href="视频链接"><video width="180px" height="100%" controls>
+    <source src="sp.mp4" type="video/mp4">
+</video>
+</a></td>
+					  <td><a href="视频链接"><video width="180px" height="100%" controls>
+    <source src="sp.mp4" type="video/mp4">
+</video>
+</a></td>
+ <td><a href="视频链接"><video width="180px" height="100%" controls>
+    <source src="sp.mp4" type="video/mp4">
+</video>
+</a></td>
+					  <td><a href="视频链接"><video width="180px" height="100%" controls>
+    <source src="sp.mp4" type="video/mp4">
+</video>
+</a></td>
+					  
+				  </tr>
+				  <tr>
+				 
+				  <td><a href="视频链接"><video width="180px" height="100%" controls>
+    <source src="sp.mp4" type="video/mp4">
+</video>
+</a></td>
+				  <td><a href="视频链接"><video width="180px" height="100%" controls>
+    <source src="sp.mp4" type="video/mp4">
+</video>
+</a></td>
+				  <td><a href="视频链接"><video width="180px" height="100%" controls>
+    <source src="sp.mp4" type="video/mp4">
+</video>
+</a></td>
+ <td><a href="视频链接"><video width="180px" height="100%" controls>
+    <source src="sp.mp4" type="video/mp4">
+</video>
+</a></td>
+					  <td><a href="视频链接"><video width="180px" height="100%" controls>
+    <source src="sp.mp4" type="video/mp4">
+</video>
+</a></td>
+										
+				  </tr>
+			  </table>
+             
+           </td>
+         
+       
+   </tr></tbody></table>
+ </div>
+
+</body></html>
